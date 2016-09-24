@@ -4,7 +4,7 @@
   "description": "load piet from file",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --compilers js:babel-register test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
     "easyimage": "^2.1.0"
   },
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
     "mocha": "^3.0.2"
   }
 }
