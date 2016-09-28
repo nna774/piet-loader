@@ -12,6 +12,7 @@ module.exports = {
   },
   env: {
     node: true,
-    browser: false
+    browser: false,
+    mocha: true,
   },
 }
