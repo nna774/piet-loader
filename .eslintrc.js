@@ -9,6 +9,7 @@ module.exports = {
     "yoda": ["error", "never", { "onlyEquality": true }],
     "strict": ["error", "function"],
     "arrow-parens": ["error", "always"],
+    "arrow-body-style": ["error", "as-needed"],
   },
   env: {
     node: true,
