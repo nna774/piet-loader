@@ -2,16 +2,22 @@ const assert = require('assert');
 
 const loader = require('../lib/loader.js');
 
+const pattern20 = [
+  ['lred', 'lyellow', 'lgreen', 'lcyan', 'lblue', 'lmagenta'],
+  ['red', 'yellow', 'green', 'cyan', 'blue', 'magenta'],
+  ['dred', 'dyellow', 'dgreen', 'dcyan', 'dblue', 'dmagenta'],
+  ['white', 'white', 'white', 'black', 'black', 'black'],
+];
+
 describe('loader', () => {
   it('load test pattern', () =>
     loader.load('test/images/colors.png', 1).then((v) => {
-      const pattern = [
-        ['lred', 'lyellow', 'lgreen', 'lcyan', 'lblue', 'lmagenta'],
-        ['red', 'yellow', 'green', 'cyan', 'blue', 'magenta'],
-        ['dred', 'dyellow', 'dgreen', 'dcyan', 'dblue', 'dmagenta'],
-        ['white', 'white', 'white', 'black', 'black', 'black'],
-      ];
-      assert.deepEqual(pattern, v);
+      assert.deepEqual(pattern20, v);
+    })
+  );
+  it('load test pattern(codel: 25)', () =>
+    loader.load('test/images/colors25.png', 25).then((v) => {
+      assert.deepEqual(pattern20, v);
     })
   );
   it('load 10 codel image', () =>
