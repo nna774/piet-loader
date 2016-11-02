@@ -12,7 +12,7 @@ const loader = require('piet-loader');
 const codelSize = 25;
 
 // This returns Promise.
-const p = loader.load('test/images/colors25.png', 25);
+const p = loader.load('test/images/colors25.png', codelSize);
 
 // use it!
 p.then((pattern) => {
