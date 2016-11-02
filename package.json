@@ -1,6 +1,6 @@
 {
   "name": "piet-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "load piet from file",
   "main": "dist/index.js",
   "scripts": {
