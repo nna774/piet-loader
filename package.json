@@ -23,7 +23,7 @@
   "dependencies": {
     "canvas": "^1.5.0",
     "easyimage": "^2.1.0",
-    "piet-loader-canvas": "0.0.3"
+    "piet-loader-canvas": "0.0.4"
   },
   "devDependencies": {
     "babel": "^6.5.2",
