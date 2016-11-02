@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-const loader = require('../lib/loader.js');
+const loader = require('../src/lib/loader.js');
 
 const pattern20 = [
   ['lred', 'lyellow', 'lgreen', 'lcyan', 'lblue', 'lmagenta'],
